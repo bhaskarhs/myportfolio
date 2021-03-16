@@ -1,0 +1,102 @@
+.Contact-section{
+    padding: 50px 100px;
+  
+    color: #fff;
+    font-size: 16px;
+}
+.created-name{
+    font-size: 1.1rem;
+    font-weight:600;
+}
+.contact-section1{
+    font-size: 2rem;
+    font-weight:600;
+}
+.color-w{
+    color: #fff !important;
+    text-align: center;
+}
+.t-center{
+    text-align: center;
+}
+.desc{
+    text-align: center;
+    font-size: 12px;
+}
+.bg-gray{
+    background-color:#f1f1f1;
+    margin-top: 10px ;
+    padding: 20px 0;
+}
+.icons{
+    color: #000;
+}
+.c-black{
+    color: #000 !important;
+}
+.creation{
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #000;
+}
+.top-button{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: salmon;
+    margin-top: 10px;
+}
+.icon{
+    text-align: center;
+    margin-top: 2px;
+    color: #fff;
+}
+.pagebottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.tooltip-text1{
+    visibility: hidden;
+}
+.tooltip:hover .tooltip-text1{
+  visibility: visible;
+}
+
+@media(max-width:900px){
+    .Contact-section{
+        padding: 50px 10px;
+    } 
+    .heading-test{
+        font-size: 1.2rem;
+    }
+    .desc{
+        /* text-align: center; */
+        font-size: 12px;
+    }
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

@@ -1,0 +1,108 @@
+.skill-wrap{
+    background-color: #fff;
+    padding: 50px 100px;
+}
+.skillname{
+    font-size: #5E5E5E;
+    text-transform: uppercase;
+}
+.skills{
+    margin: 20px 0;
+}
+.progressbar{
+    height: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px  1px rgba(0, 0,0,0.05) , 0px 1px  rgba(255, 255,255,0.8);
+    margin: 5px 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    position: relative;
+    animation: animate1 2s cubic-bezier(1,0,0.5,1) forwards;   
+}
+@keyframes animate1{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progressbar span{
+border-radius: 10px;
+position: absolute;
+height: 100%;
+transform: scaleX(0);
+transform-origin: left;
+background-color: saddlebrown;
+animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scaleX(1);
+    }
+}
+.progressbar.html span{
+    width: 80%;
+}
+.progressbar.css span{
+    width: 80%;
+}
+
+.progressbar.js span{
+    width: 60%;
+}
+.progressbar.bootstrap span{
+    width: 70%;
+}
+.progressbar.uidesign span{
+    width: 60%;
+}
+.progressbar.react span{
+    width: 60%;
+}
+
+.progressbar span::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 2px;
+    top: -9px;
+    border:7px solid transparent;
+    border-bottom-width: 0;
+    border-right-width: 0;
+    border-top-color: #000;
+}
+.progressbar span::after{
+   
+    position: absolute;
+    right: 0;
+    top: -32px;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+.progressbar.html span::after{
+    content: '80%';
+}
+.progressbar.css span::after{
+    content: '80%';
+}
+.progressbar.js span::after{
+    content: '60%';
+}
+.progressbar.bootstrap span::after{
+    content: '70%';
+}
+.progressbar.uidesign span::after{
+    content: '60%';
+}
+.progressbar.react span::after{
+    content: '60%';
+}
+
+@media(max-width:900px){
+    .skill-wrap{
+        padding: 50px 10px;
+    }
+}
+

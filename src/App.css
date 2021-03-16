@@ -1,0 +1,225 @@
+:root {
+  --whiteColor: #f1f1f1;
+  --textHeadingColor:#4D4D57;
+   --textsecondaryColor:#FF8B04;
+   --textprimaryColor:#5E5E5E; 
+   --sectionbgcolor:#F6F6F6;
+ }
+ *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ li{
+   list-style:none;
+
+ }
+ a{
+   text-decoration: none;
+ }
+ .banner-section-text{
+   color: var(--textHeadingColor);
+ }
+ .heading-test{
+   font-size: 3.5rem;
+   color: var(--textHeadingColor);
+   font-weight: bold;
+   letter-spacing:2px;
+ }
+ .rectangleshape{
+   width: 80px;
+   height: 5px;
+   background-color: var(--textHeadingColor);
+ }
+ .logo{
+   font-size: 36px;
+   font-weight: 900;
+   letter-spacing: 3%;
+   color: var(--textHeadingColor);
+   cursor: pointer;
+ }
+.flex-wrapping,.flex-wrapping1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-header-menu{
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 100px;
+  padding: 25px 0;
+}
+.list-wrap li{
+  margin: 0 10px;
+}
+.list-wrap li a{
+  font-size:18px ;
+  color: var(--textHeadingColor);
+  margin-right: 1rem;
+}
+
+.list-wrap li a:hover{
+  color: var(--textsecondaryColor);
+  background-color: var(--whiteColor);
+  padding:10px;
+  border-radius: 10px;
+}
+
+.hamburger-menu{
+  display:none;
+}
+.banner-section{
+  margin: 0 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-section-text .main-text{
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 3%;
+}
+.banner-section-text .main-text span{
+  color: var(--textsecondaryColor);
+}
+.banner-section-image img{
+  height:85vh;
+}
+.subheading-text{
+  padding: 10px 0;
+  font-size: 24px;
+  color: var(--textprimaryColor);
+  font-weight: 400;
+  letter-spacing: 3%;
+}
+.btn{
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.know-morebtn{
+  background-color: var(--whiteColor);
+  border: none;
+  box-shadow: 4px 4px 25px 1px rgba(0, 0, 0, 0.15);
+}
+.hireme{
+  border:1px solid gray;
+}
+.service-section1{
+  background-color: var(--sectionbgcolor);
+  padding: 50px 100px;
+}
+
+/* ui deigns */
+.previousworks-wrap{
+  padding: 50px 100px;
+}
+.uiworkswrap{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between ;
+  position: relative;
+}
+.imagewrap{
+  position: relative;
+}
+.imagewrap :nth-child(2){
+    height: 80%;
+    position:absolute;
+    left: 100px;
+    top: 80px;
+
+}
+.imagetext{
+  margin-top: 1rem;
+}
+/* end of ui designs */
+@media(min-width:300px) and (max-width:370px){
+  .banner-section-image img{
+    width: 85vw;
+    height:60vh !important;
+  }
+} 
+@media(max-width:900px){
+  .logo{
+    font-size: 28px;
+  }
+  .section-header-menu{
+    
+    margin: 0 10px;
+    padding: 10px 0;
+  }
+   .main-menu{
+    background-color: var(--textsecondaryColor);
+    position: absolute;
+    top: 1px;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    transition-delay:  2s;
+    transition-duration: 3s;
+    clip-path: circle(60% at 0% 30%);
+     /* for having half ciricle 60% as circle 
+    in that 60% 30% curved at down and 0 at top
+    */
+  }
+
+  .main-menuactive{
+    display: none;
+  }
+
+  .list-wrap li{
+    flex-direction: column;
+    transition-duration: 2s;
+    transition-delay: 2s;
+  }
+  .list-wrap li{
+    margin: 10% 35%;
+  }
+  .list-wrap li a{
+    color: var(--whiteColor);
+  }
+  .hamburger-menu{
+    display:block;
+    background-color: var(--textsecondaryColor);
+    padding:14px 16px;
+    /* height: 80px; */
+    /* width: 80px; */
+    color: var(--whiteColor);
+    border-radius: 30px;
+    /* clip-path: circle(80% at 100% 50% ); */
+  }
+  .hamburger-menu i{
+    font-size: 20px;
+  }
+  .flex-wrapping1{
+    flex-direction: column;
+  }
+  .banner-section{
+    margin: 10px;
+  }
+  .banner-section-text{
+    text-align: center;
+  }
+ .banner-section-text .main-text{
+    font-size: 44px;
+  }
+  .subheading-text{
+    font-size: 1rem;
+  }
+  .banner-section-image img{
+    width: 85vw;
+    height:50vh;
+  }
+  .previousworks-wrap{
+    padding: 50px 10px;
+  }
+  .imagewrap ,.imagetext{
+    text-align:center;
+  }
+  .imagetext{
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+.works-section{
+    margin: 50px 100px;
+    background-color: #fff;
+    color: #4D4D57;
+}
+.work-image{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.works{
+    margin-top: 20px;
+}
+.description{
+    margin-top: 3em;
+    margin-left: 3rem;
+}
+.p-name span,.p-size span,.p-description span,.p-contribution span {
+    font-weight:700;
+    font-size: 1rem;
+    color: #000;
+}
+
+@media(max-width:900px){
+    .works-section{
+        margin: 10px;
+    }
+    .work-image{
+        flex-direction: column;
+    }
+    .description{
+        margin: 20px 10px;
+    }
+}

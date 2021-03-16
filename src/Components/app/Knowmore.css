@@ -1,0 +1,43 @@
+.KnowMore-section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5% 100px;
+    align-items: center;
+}
+.knowmoreimage{
+    height:60vh;
+}
+.about-text{
+    font-size: large;
+    letter-spacing: 1px;
+}
+.download-button{
+   padding: 10px 24px; 
+   border:1px solid gray;
+   border-radius: 10px;
+
+}
+.download-btn--wrap{
+    margin: 2.5rem 0;
+}
+@media (max-width:900px){
+    .KnowMore-section{
+        flex-direction: column;
+        margin: 5% 10px;
+    }
+    .knowmoreimage{
+        width: 100vw;
+        height: 45vh;
+        margin-bottom: 15%;
+    }
+    .heading-test{
+        font-size: 2.6rem;
+    }.about-text{
+        font-size: 1rem;
+        letter-spacing: 0;
+        
+    }
+
+}
